@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Laberinto</string>
+    <string name="title_activity_main">Laberinto: el juego.</string>
+    <string name="up_btn">ARRIBA</string>
+    <string name="right_btn">DERECHA</string>
+    <string name="down_btn">ABAJO</string>
+    <string name="pause_btn">PAUSA</string>
+    <string name="left_btn">IZQUIERDA</string>
+    <string name="select_game">¡Seleccione un juego!!</string>
+    <string name="or_new">O cree uno nuevo</string>
+    <string name="name">Nombre</string>
+    <string name="plus_sign">Nuevo</string>
+</resources>
