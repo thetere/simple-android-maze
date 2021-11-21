@@ -1,0 +1,19 @@
+Seminario 2 - 2021 - TP 2
+
+Desarrollo de una aplicación para móviles con Android (https://developer.android.com/).
+
+Basado en el proyecto de juego https://github.com/patok/simple-android-maze en su versión 2021_tp2, implementar utilizando el API estándar de Android lo siguiente:
+
+1.    En el layout res/layout/maze.xml agregar un botón en medio de los botones LEFT y RIGHT cuya función va a ser des/pausar el juego. Dicho botón debe mostrar la leyenda "PAUSE" o su equivalente en los idiomas disponibles.
+2.    Implementar un handler OnClickListener para el botón del punto 1 de manera que produzca el cambio de estado deseado (ver método conveniente en la clase Game.pauseOrStart() ).
+3.    Diseñe y codifique una forma de detectar la llegada de un jugador a la meta o salida: una casilla predeterminada del tablero de juego; tenga en cuenta que la posición de la meta de llegada en el tablero debe ser definido como parte de los datos iniciales del juego (update: las coordenadas de la casilla de llegada estan definidas en la clase MazeBoard) y además debe estar señalizada para poder distinguirse visualmente.
+4.    (opcional) Sugiera una forma de realizar el posicionamiento inicial aleatorio de los jugadores, antes de arrancar el juego.
+5.    (opcional) También sugiera de qué manera arrancaria el juego, ya sea por tiempo vencido, al alcanzar una cantidad predeterminada de jugadores, o algún otro criterio que se le ocurra.
+
+Fecha limite de entrega: 23/11 o c/ anterioridad a la mesa de exámen a presentarse.
+
+nota:
+
+1.    No es necesario implementar los puntos 4 y 5.
+2.    Referencia para configurar tu propia instancia de Firebase en el proyecto: agregar Firebase mediante consola. (https://firebase.google.com/docs/android/setup#console)
+
