@@ -78,7 +78,7 @@ public class MazeBoardActivity extends AppCompatActivity
                 /*Log.d("PIECE: ", String.format("j: %d - i: %d", j, i)); //para saber como comparar exit con j e i*/
                 ImageView imageView = new ImageView(this);
                 imageView.setBackgroundResource(resId);
-                if (j==(board.getExitY()-1) && i==(board.getExitX()-1)){
+                if (j==(board.getExitX()-1) && i==(board.getExitY()-1)){
                     imageView.setImageResource(R.drawable.flag_square);
                     /*Log.d("IF: ", String.format("Entre al IF, j=ExitY, i=ExitX"));*/
                 }
