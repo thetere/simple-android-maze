@@ -1,0 +1,2 @@
+El posicionamiento inicial aleatorio de los jugadores podría hacerse mediante una función random que setee dos variables como las de la casilla de llegada/salida.
+Debería haber alguna especie de cálculo para que ningún jugador esté en ventaja para alcanzar la casilla de llegada/salida, es decir que esten equidistantes de la misma.

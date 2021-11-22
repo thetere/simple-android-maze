@@ -1,0 +1,3 @@
+A mi criterio el juego podría comenzar con una cantidad predeterminada de jugadores (para mí lo ideal sería 4 jugadores), pero también con cierto tiempo de espera para nuevos jugadores.
+Más adelante podría extenderse el tablero de forma tal que exceda la pantalla y uno vaya viendo de a partes, en ese caso quizás podrían entrar más de 4 jugadores según el tamaño del tablero.
+Inclusive podrían entrar jugadores una vez comenzado el juego si la complejidad del tablero así lo permite.
