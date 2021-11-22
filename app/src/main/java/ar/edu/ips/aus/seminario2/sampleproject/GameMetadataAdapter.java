@@ -63,7 +63,8 @@ public class GameMetadataAdapter
 
             }
         };
-        mDatabaseReference.addChildEventListener(mChildEventListener);
+        mDatabaseReference.orderByChild("status").equalTo("RUNNING").addChildEventListener(mChildEventListener);
+        mDatabaseReference.orderByChild("status").equalTo("PAUSED").addChildEventListener(mChildEventListener);
     }
 
     @NonNull

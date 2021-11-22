@@ -1,6 +1,7 @@
 package ar.edu.ips.aus.seminario2.sampleproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -48,7 +49,10 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
         thread.setRunning(true);
-        thread.start();
+        if (thread.getState() == Thread.State.NEW)
+            {
+                thread.start();
+            }
     }
 
     @Override
@@ -87,7 +91,11 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                 //Log.d("MAZE: ", String.format("src rect: %s - dst rect: %s", srcRect.toShortString(), dstRect.toShortString()));
                 if ((int) p.getX() == (board.getExitX()-1) && (int) p.getY() == (board.getExitY()-1)){
                     //Log.d("WIN: ", String.format("GANASTESSS"));
+                    Intent intent = new Intent(getContext(), FinishSplashActivity.class);
+                    getContext().startActivity(intent);
                     Game.getInstance().setStatus("FINISHED");
+                    Game.getInstance().publicUpdateGameStatus();
+                    thread.setRunning(false);
                 }
                 canvas.drawBitmap(playerSprites.getSprites(), srcRect, dstRect, null);
                 count++;

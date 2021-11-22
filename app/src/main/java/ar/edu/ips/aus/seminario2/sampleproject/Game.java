@@ -161,4 +161,6 @@ public class Game {
     private void updateGameStatus() {
         statusDatabase.setValue(gameMetadata.getStatus());
     }
+
+    public void publicUpdateGameStatus(){ updateGameStatus(); }
 }

@@ -11,4 +11,6 @@
     <string name="or_new">O cree uno nuevo</string>
     <string name="name">Nombre</string>
     <string name="plus_sign">Nuevo</string>
+    <string name="you_win">¡GANASTES!</string>
+    <string name="play_again">Juego Nuevo</string>
 </resources>

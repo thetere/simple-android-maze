@@ -10,4 +10,7 @@
     <string name="or_new">OR create a new game</string>
     <string name="name">Name</string>
     <string name="plus_sign">New</string>
+    <string name="you_win">YOU WIN!</string>
+    <string name="play_again">Play Again</string>
+    <string name="fireworks">fireworks</string>
 </resources>
