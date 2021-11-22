@@ -83,10 +83,11 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
             for (Player p: Game.getInstance().getPlayers()) {
                 Rect srcRect = playerSprites.getSourceRectangle(this, board, p, count);
                 Rect dstRect = playerSprites.getDestinationRectangle(this, board, p);
-                Log.d("PLAYER: ", String.format("x: %d - y: %d", (int) p.getX(), (int) p.getY()));
+                //Log.d("PLAYER: ", String.format("x: %d - y: %d", (int) p.getX(), (int) p.getY()));
                 //Log.d("MAZE: ", String.format("src rect: %s - dst rect: %s", srcRect.toShortString(), dstRect.toShortString()));
                 if ((int) p.getX() == (board.getExitX()-1) && (int) p.getY() == (board.getExitY()-1)){
-                    Log.d("WIN: ", String.format("GANASTESSS"));
+                    //Log.d("WIN: ", String.format("GANASTESSS"));
+                    Game.getInstance().setStatus("FINISHED");
                 }
                 canvas.drawBitmap(playerSprites.getSprites(), srcRect, dstRect, null);
                 count++;
