@@ -95,7 +95,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                     getContext().startActivity(intent);
                     Game.getInstance().setStatus("FINISHED");
                     Game.getInstance().publicUpdateGameStatus();
-                    thread.setRunning(false);
+                    //thread.setRunning(false);
                 }
                 canvas.drawBitmap(playerSprites.getSprites(), srcRect, dstRect, null);
                 count++;
