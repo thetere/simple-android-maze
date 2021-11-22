@@ -5,6 +5,7 @@ import android.graphics.PixelFormat;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -74,9 +75,13 @@ public class MazeBoardActivity extends AppCompatActivity
                 BoardPiece piece = board.getPiece(j, i);
 
                 resId = lookupResource(piece);
-
+                /*Log.d("PIECE: ", String.format("j: %d - i: %d", j, i)); //para saber como comparar exit con j e i*/
                 ImageView imageView = new ImageView(this);
                 imageView.setBackgroundResource(resId);
+                if (j==(board.getExitY()-1) && i==(board.getExitX()-1)){
+                    imageView.setImageResource(R.drawable.flag_square);
+                    /*Log.d("IF: ", String.format("Entre al IF, j=ExitY, i=ExitX"));*/
+                }
                 TableRow.LayoutParams imageViewParams = new TableRow.LayoutParams();
                 imageViewParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
                 imageViewParams.height = ViewGroup.LayoutParams.MATCH_PARENT;
